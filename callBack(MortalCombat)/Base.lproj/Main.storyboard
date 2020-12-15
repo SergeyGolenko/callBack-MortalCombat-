@@ -27,12 +27,21 @@
                                 </state>
                                 <connections>
                                     <action selector="selectPlayer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nyh-3v-UHx"/>
-                                    <segue destination="LHu-on-gjo" kind="show" id="Czj-TE-MzM"/>
+                                    <segue destination="LHu-on-gjo" kind="show" identifier="0000" id="Czj-TE-MzM"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lzW-fe-4c2">
                                 <rect key="frame" x="0.0" y="98" width="414" height="624"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O0s-2R-CJH">
+                                <rect key="frame" x="30" y="118" width="354" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="CtC-E3-TnZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="44"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -41,13 +50,17 @@
                             <constraint firstItem="lzW-fe-4c2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="6bX-KC-uH0"/>
                             <constraint firstItem="yne-C2-MKA" firstAttribute="top" secondItem="lzW-fe-4c2" secondAttribute="bottom" constant="10" id="Htl-GD-sxy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yne-C2-MKA" secondAttribute="bottom" constant="100" id="Jfi-xD-gkD"/>
+                            <constraint firstItem="O0s-2R-CJH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="S1V-Od-tqU"/>
+                            <constraint firstItem="O0s-2R-CJH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="SrY-zq-nXh"/>
                             <constraint firstItem="lzW-fe-4c2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oRk-qO-h7d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="O0s-2R-CJH" secondAttribute="trailing" constant="30" id="yIP-1B-rM9"/>
                             <constraint firstItem="yne-C2-MKA" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="yc9-ap-TXJ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wXM-X1-KUs"/>
                     <connections>
                         <outlet property="imageMC" destination="lzW-fe-4c2" id="TdT-jG-WyF"/>
+                        <outlet property="labelName" destination="O0s-2R-CJH" id="WZt-Zb-L2E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -137,6 +150,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vEd-2G-N6n">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

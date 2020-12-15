@@ -9,28 +9,43 @@ import UIKit
 
 class SecondViewController: UIViewController {
     
+    private let subzeroText = "Subzero"
+    private let xirexText = "Xirex"
+    private let reptiliaText = "Reptilia"
+    
+    private let subzero = UIImage(named: "subzero")
+    private let xirex  = UIImage(named: "xirex")
+    private let scorpion = UIImage(named: "scorpion")
+    private let reptilia = UIImage(named: "reptilia")
+    
+    var callBack:((UIImage?,String) -> ())?
+    
     
     
     
     @IBAction func firstButton(_ sender: UIButton) {
-        dismiss(animated: true, completion: nil)
+        callBack? (subzero,subzeroText)
+        navigationController?.popViewController(animated: true)
     }
     
     
     @IBAction func secondButton(_ sender: UIButton) {
-        dismiss(animated: true, completion: nil)
+        callBack? (xirex,xirexText)
+        navigationController?.popViewController(animated: true)
     }
     
     
     @IBAction func thirdButton(_ sender: UIButton) {
-        dismiss(animated: true, completion: nil)
+        callBack? (scorpion,"Scorpion")
+        navigationController?.popViewController(animated: true)
     }
     
     
     
     
     @IBAction func fourButton(_ sender: UIButton) {
-        dismiss(animated: true, completion: nil)
+        callBack? (reptilia,reptiliaText)
+        navigationController?.popViewController(animated: true)
     }
     
     
