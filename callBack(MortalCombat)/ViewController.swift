@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     
     
     @IBOutlet weak var imageMC: UIImageView!
+    
     @IBAction func selectPlayer(_ sender: UIButton) {
     }
     

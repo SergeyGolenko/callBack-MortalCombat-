@@ -54,90 +54,73 @@
             </objects>
             <point key="canvasLocation" x="334.78260869565219" y="279.91071428571428"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="89L-hp-3Qt">
             <objects>
-                <viewController id="LHu-on-gjo" sceneMemberID="viewController">
+                <viewController id="LHu-on-gjo" customClass="SecondViewController" customModule="callBack_MortalCombat_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TQ0-x3-2xs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vq1-gT-PxU">
-                                <rect key="frame" x="172" y="108" width="70" height="70"/>
-                                <color key="backgroundColor" red="0.14901960780000001" green="0.65098039220000004" blue="0.82745098039999998" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jee-td-ex7">
+                                <rect key="frame" x="132" y="108" width="150" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="Inv-fI-Rzb"/>
-                                    <constraint firstAttribute="height" constant="70" id="UIK-Uj-tca"/>
+                                    <constraint firstAttribute="width" constant="150" id="SiG-OS-CJh"/>
+                                    <constraint firstAttribute="height" constant="150" id="zCo-0n-0MR"/>
                                 </constraints>
-                                <state key="normal" image="cabal"/>
+                                <state key="normal" title="Button" image="subzero"/>
+                                <connections>
+                                    <action selector="firstButton:" destination="LHu-on-gjo" eventType="touchUpInside" id="3zg-yS-hlY"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDc-jk-GIb">
-                                <rect key="frame" x="272" y="108" width="70" height="70"/>
-                                <color key="backgroundColor" red="0.14901960780000001" green="0.65098039220000004" blue="0.82745098039999998" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mUC-p5-3wn">
+                                <rect key="frame" x="132" y="278" width="150" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="1cd-qN-mpd"/>
-                                    <constraint firstAttribute="height" constant="70" id="JXX-X2-WKx"/>
+                                    <constraint firstAttribute="height" constant="150" id="n3t-a2-h4w"/>
+                                    <constraint firstAttribute="width" constant="150" id="xJj-J5-18P"/>
                                 </constraints>
-                                <state key="normal" image="reptilia"/>
+                                <state key="normal" title="Button" image="xirex"/>
+                                <connections>
+                                    <action selector="secondButton:" destination="LHu-on-gjo" eventType="touchUpInside" id="sjc-iv-hXe"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EBD-Kc-waa">
-                                <rect key="frame" x="72" y="108" width="70" height="70"/>
-                                <color key="backgroundColor" red="0.14901960780000001" green="0.65098039220000004" blue="0.82745098039999998" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G41-Qe-EBl">
+                                <rect key="frame" x="132" y="448" width="150" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="8Qp-hj-fZ6"/>
-                                    <constraint firstAttribute="width" constant="70" id="GHa-QR-EvV"/>
+                                    <constraint firstAttribute="height" constant="150" id="2g6-k5-iVp"/>
+                                    <constraint firstAttribute="width" constant="150" id="cDq-QZ-cTx"/>
                                 </constraints>
-                                <state key="normal" image="xirex"/>
+                                <state key="normal" title="Button" image="scorpion"/>
+                                <connections>
+                                    <action selector="secondButton:" destination="LHu-on-gjo" eventType="touchUpInside" id="p41-64-ooZ"/>
+                                    <action selector="thirdButton:" destination="LHu-on-gjo" eventType="touchUpInside" id="0Yd-rA-HCH"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7CG-qh-iA5">
-                                <rect key="frame" x="172" y="198" width="70" height="70"/>
-                                <color key="backgroundColor" red="0.14901960780000001" green="0.65098039220000004" blue="0.82745098039999998" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Yo-Cx-gYM">
+                                <rect key="frame" x="132" y="618" width="150" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="cmc-aM-Kyq"/>
-                                    <constraint firstAttribute="width" constant="70" id="lW8-vk-fUI"/>
+                                    <constraint firstAttribute="height" constant="150" id="nZq-oS-Gb1"/>
+                                    <constraint firstAttribute="width" constant="150" id="pmh-tF-wJV"/>
                                 </constraints>
-                                <state key="normal" image="scorpion"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bER-eV-o3n">
-                                <rect key="frame" x="272" y="198" width="70" height="70"/>
-                                <color key="backgroundColor" red="0.14901960780000001" green="0.65098039220000004" blue="0.82745098039999998" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="jvM-SH-a8j"/>
-                                    <constraint firstAttribute="width" constant="70" id="wwQ-Ei-XLp"/>
-                                </constraints>
-                                <state key="normal" image="subzero"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjp-2x-U4a">
-                                <rect key="frame" x="72" y="198" width="70" height="70"/>
-                                <color key="backgroundColor" red="0.14901960780000001" green="0.65098039220000004" blue="0.82745098039999998" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="QnD-gB-5zw"/>
-                                    <constraint firstAttribute="height" constant="70" id="kwv-Em-0BJ"/>
-                                </constraints>
-                                <state key="normal" image="lukan"/>
+                                <state key="normal" title="Button" image="reptilia"/>
+                                <connections>
+                                    <action selector="fourButton:" destination="LHu-on-gjo" eventType="touchUpInside" id="oDQ-eY-27V"/>
+                                    <action selector="secondButton:" destination="LHu-on-gjo" eventType="touchUpInside" id="hYK-ii-o0F"/>
+                                    <action selector="thirdButton:" destination="LHu-on-gjo" eventType="touchUpInside" id="bcL-6k-n8c"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Nlf-MN-haZ"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="kDc-jk-GIb" firstAttribute="leading" secondItem="vq1-gT-PxU" secondAttribute="trailing" constant="30" id="85O-fH-9Jj"/>
-                            <constraint firstItem="kDc-jk-GIb" firstAttribute="top" secondItem="Nlf-MN-haZ" secondAttribute="top" constant="20" id="Aiv-cK-3PH"/>
-                            <constraint firstItem="7CG-qh-iA5" firstAttribute="firstBaseline" secondItem="bER-eV-o3n" secondAttribute="firstBaseline" id="D8h-N1-5wP"/>
-                            <constraint firstItem="7CG-qh-iA5" firstAttribute="top" secondItem="vq1-gT-PxU" secondAttribute="bottom" constant="20" id="GB3-0I-Zio"/>
-                            <constraint firstItem="qjp-2x-U4a" firstAttribute="firstBaseline" secondItem="7CG-qh-iA5" secondAttribute="firstBaseline" id="Koo-8Y-syx"/>
-                            <constraint firstItem="7CG-qh-iA5" firstAttribute="baseline" secondItem="bER-eV-o3n" secondAttribute="baseline" id="Oze-xc-anu"/>
-                            <constraint firstItem="qjp-2x-U4a" firstAttribute="top" secondItem="EBD-Kc-waa" secondAttribute="bottom" constant="20" id="RZQ-Xc-BXl"/>
-                            <constraint firstItem="qjp-2x-U4a" firstAttribute="baseline" secondItem="bER-eV-o3n" secondAttribute="baseline" id="SgT-OB-U16"/>
-                            <constraint firstItem="bER-eV-o3n" firstAttribute="top" secondItem="kDc-jk-GIb" secondAttribute="bottom" constant="20" id="TeG-el-6N4"/>
-                            <constraint firstItem="bER-eV-o3n" firstAttribute="firstBaseline" secondItem="qjp-2x-U4a" secondAttribute="firstBaseline" id="Ybq-DS-w93"/>
-                            <constraint firstItem="vq1-gT-PxU" firstAttribute="top" secondItem="Nlf-MN-haZ" secondAttribute="top" constant="20" id="awe-1I-tak"/>
-                            <constraint firstItem="EBD-Kc-waa" firstAttribute="top" secondItem="Nlf-MN-haZ" secondAttribute="top" constant="20" id="c1k-VF-fui"/>
-                            <constraint firstItem="qjp-2x-U4a" firstAttribute="baseline" secondItem="7CG-qh-iA5" secondAttribute="baseline" id="eGG-8g-MVX"/>
-                            <constraint firstItem="qjp-2x-U4a" firstAttribute="leading" secondItem="EBD-Kc-waa" secondAttribute="leading" id="eRo-Tu-Rag"/>
-                            <constraint firstItem="7CG-qh-iA5" firstAttribute="leading" secondItem="qjp-2x-U4a" secondAttribute="trailing" constant="30" id="fOZ-1z-f2Y"/>
-                            <constraint firstItem="bER-eV-o3n" firstAttribute="leading" secondItem="7CG-qh-iA5" secondAttribute="trailing" constant="30" id="nno-z1-3AG"/>
-                            <constraint firstItem="vq1-gT-PxU" firstAttribute="leading" secondItem="EBD-Kc-waa" secondAttribute="trailing" constant="30" id="tWv-d9-Vix"/>
-                            <constraint firstItem="vq1-gT-PxU" firstAttribute="centerX" secondItem="Nlf-MN-haZ" secondAttribute="centerX" id="w0J-hA-6RE"/>
+                            <constraint firstItem="G41-Qe-EBl" firstAttribute="top" secondItem="mUC-p5-3wn" secondAttribute="bottom" constant="20" id="77B-bg-ze7"/>
+                            <constraint firstItem="mUC-p5-3wn" firstAttribute="centerX" secondItem="Nlf-MN-haZ" secondAttribute="centerX" id="Ela-BA-atr"/>
+                            <constraint firstItem="jee-td-ex7" firstAttribute="centerX" secondItem="Nlf-MN-haZ" secondAttribute="centerX" id="KPU-oN-bxL"/>
+                            <constraint firstItem="G41-Qe-EBl" firstAttribute="centerX" secondItem="Nlf-MN-haZ" secondAttribute="centerX" id="Ok1-S3-GZ6"/>
+                            <constraint firstItem="2Yo-Cx-gYM" firstAttribute="top" secondItem="G41-Qe-EBl" secondAttribute="bottom" constant="20" id="YdQ-QT-dpv"/>
+                            <constraint firstItem="mUC-p5-3wn" firstAttribute="top" secondItem="jee-td-ex7" secondAttribute="bottom" constant="20" id="drJ-4o-dfq"/>
+                            <constraint firstItem="jee-td-ex7" firstAttribute="top" secondItem="Nlf-MN-haZ" secondAttribute="top" constant="20" id="eE0-qm-rC3"/>
+                            <constraint firstItem="2Yo-Cx-gYM" firstAttribute="centerX" secondItem="Nlf-MN-haZ" secondAttribute="centerX" id="hSP-bF-2xW"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="y6i-4h-giT"/>
@@ -166,8 +149,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="cabal" width="960" height="600"/>
-        <image name="lukan" width="960" height="600"/>
         <image name="reptilia" width="1280" height="800"/>
         <image name="scorpion" width="960" height="540"/>
         <image name="subzero" width="960" height="540"/>
